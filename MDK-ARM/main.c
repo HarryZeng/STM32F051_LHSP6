@@ -556,7 +556,7 @@ void SMG_GPIO_INIT(void)
 		gpio_init_structure.GPIO_Pin = D7_Pin;  
 		GPIO_Init(D7_GPIO_Port, &gpio_init_structure);  
 		//GPIOA                                                        
-    gpio_init_structure.GPIO_Pin = D9_Pin;  
+    gpio_init_structure.GPIO_Pin = D8_Pin|D9_Pin;  
     gpio_init_structure.GPIO_Mode = GPIO_Mode_OUT;                  
     gpio_init_structure.GPIO_OType = GPIO_OType_PP;                 
     gpio_init_structure.GPIO_Speed = GPIO_Speed_2MHz;              
